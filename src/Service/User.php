@@ -9,10 +9,12 @@ class User
     use ApiCall;
 
     public string $apiKey;
+    public string $method;
 
-    public function __construct(string $apiKey)
+    public function __construct(string $apiKey, $method)
     {
         $this->apiKey = $apiKey;
+        $this->method = $method;
     }
 
     public function enroll(string $first_name, string $last_name, string $dob, string $street1, ?string $street2 = null, int $zipcode, int $ssn_last_four, ?string $phone_number = null, ?string $email = null)
@@ -29,6 +31,6 @@ class User
             'email' => $email
         ];
 
-        return json_decode($this->apiPost($this->apiKey, 'enroll', $params));
+        return json_decode($this->apiPost($this->apiKey, 'enroll', $params, $this->method));
     }
 }

@@ -42,8 +42,15 @@ var_dump($privacy->Card()->listCards());
 // Available Spend Limit Duration: TRANSACTION, MONTHLY, ANNUALLY, FOREVER
 // Available State: OPEN, PAUSED
 
+//Simulate Methods (requires sandbox API)
+// to use sandbox, pass it through the Service Call, if left blank, it will use the live url.
 
+var_dump($privacy->Card('sandbox')->authorize(string $descriptor, int $pan, int $amount));
+var_dump($privacy->Card('sandbox')->void(string $token, int $amount));
+var_dump($privacy->Card('sandbox')->clearing(string $token, int $amount));
 
+//return is equivelant of refund
+var_dump($privacy->Card('sandbox')->return(string $descriptor, int $pan, int $amount));
 ```
 
 ### Changelog
