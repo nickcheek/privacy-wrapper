@@ -2,7 +2,7 @@
 
 namespace Nickcheek\PrivacyWrapper;
 
-use Nickcheek\PrivacyWrapper\Service\{Card,Funding,User};
+use Nickcheek\PrivacyWrapper\Service\{Card,Funding,User,Simulate};
 
 class PrivacyWrapper
 {
@@ -27,5 +27,10 @@ class PrivacyWrapper
     public function User($method='api'): object
     {
         return new User($this->apiKey,$method);
+    }
+
+    public function Simulate($method='api'): object
+    {
+        return new Simulate($this->apiKey,$method);
     }
 }
