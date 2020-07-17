@@ -15,7 +15,7 @@ class User
         $this->apiKey = $apiKey;
     }
 
-    public function enroll($first_name, $last_name, $dob, $street1, $street2 = null, $zipcode, $ssn_last_four, $phone_number = null, $email = null)
+    public function enroll(string $first_name, string $last_name, string $dob, string $street1, ?string $street2 = null, int $zipcode, int $ssn_last_four, ?string $phone_number = null, ?string $email = null)
     {
         $params =  [
             'first_name' => $first_name,

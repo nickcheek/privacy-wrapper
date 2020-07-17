@@ -3,7 +3,8 @@
     "description": "PHP Api wrapper for Privacy API",
     "keywords": [
         "nickcheek",
-        "privacy-wrapper"
+        "privacy-wrapper",
+        "privacy"
     ],
     "homepage": "https://github.com/nickcheek/privacy-wrapper",
     "license": "MIT",

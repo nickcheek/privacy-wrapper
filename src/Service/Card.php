@@ -15,7 +15,7 @@ class Card
         $this->apiKey = $apiKey;
     }
 
-    public function createCard($token = '', $type = 'SINGLE_USE',  $spend_limit = 10000, $limit_duration = 'FOREVER', $state = 'OPEN'): object
+    public function createCard(string $token = '', string $type = 'SINGLE_USE', int $spend_limit = 10000, string $limit_duration = 'FOREVER', string $state = 'OPEN'): object
     {
         $params = [
             'memo' => 'nicks test card',
@@ -29,7 +29,7 @@ class Card
         return json_decode($this->apiPost($this->apiKey, 'card', $params));
     }
 
-    public function updateCard($card_token, $memo = null, $state = 'OPEN', $funding_token = '',  $spend_limit = 10000, $spend_limit_duration = 'FOREVER'): object
+    public function updateCard(string $card_token, ?string $memo = null, string $state = 'OPEN', string $funding_token = '', int $spend_limit = 10000, string $spend_limit_duration = 'FOREVER'): object
     {
         $params = [
             'card_token' => $card_token,
