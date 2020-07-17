@@ -20,7 +20,7 @@ composer require nickcheek/privacy-wrapper
 ``` php
 // Include the library and then call it
 
-$privacy = new PrivacyWrapper('83c56ade-f2ab-4069-b7a1-672e71b40afa');
+$privacy = new PrivacyWrapper('your-api-code-from-privacy');
 
 var_dump($privacy->User()->enroll($first_name, $last_name, $dob, $street1, $street2 = null, $zipcode, $ssn_last_four, $phone_number = null, $email = null));
 
