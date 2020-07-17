@@ -1,8 +1,6 @@
 # Privacy API wrapper for PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/nickcheek/privacy-wrapper.svg?style=flat-square)](https://packagist.org/packages/nickcheek/privacy-wrapper)
-[![Build Status](https://img.shields.io/travis/nickcheek/privacy-wrapper/master.svg?style=flat-square)](https://travis-ci.org/nickcheek/privacy-wrapper)
-[![Quality Score](https://img.shields.io/scrutinizer/g/nickcheek/privacy-wrapper.svg?style=flat-square)](https://scrutinizer-ci.com/g/nickcheek/privacy-wrapper)
 [![Total Downloads](https://img.shields.io/packagist/dt/nickcheek/privacy-wrapper.svg?style=flat-square)](https://packagist.org/packages/nickcheek/privacy-wrapper)
 
 Just a small PHP API wrapper for privacy.com
