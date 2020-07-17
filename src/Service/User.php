@@ -31,6 +31,4 @@ class User
 
         return json_decode($this->apiPost($this->apiKey, 'enroll', $params));
     }
-
-    
 }
